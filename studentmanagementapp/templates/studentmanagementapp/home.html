@@ -1,0 +1,29 @@
+{% extends "studentmanagementapp/base.html" %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <a class="btn btn-primary" href="{% url 'student-create' %}" role="button">Create New Student</a>
+    </div>
+    <div class="col-sm">
+      <a class="btn btn-primary" href="{% url 'school-create' %}" role="button">Create New School</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <a class="btn btn-primary" href="{% url 'book-create' %}" role="button">Create New Book</a>
+    </div>
+    <div class="col-sm">
+      <a class="btn btn-primary" href="{% url 'search' %}" role="button">Search</a>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
